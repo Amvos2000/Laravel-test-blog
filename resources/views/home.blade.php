@@ -15,6 +15,23 @@
                     @endif
 
                     You are logged in!
+                        <a href="/posts/create">Create posts</a>
+                    <h3>Your Blog Posts</h3>
+                     <table>
+                         <tr>
+                             <th>Title</th>
+                             <th></th>
+                             <th></th>
+                         </tr>
+                         @foreach($posts as $post)
+                             <tr>
+                                 <th>{{$post->title}}</th>
+                                    <th><a href="/posts/{{$post->id}}/edit">Edit</a></th>
+                                    <th><a href="/posts/{{$post->id}}/edit">Delete</a></th>
+                             </tr>
+                         @endforeach
+
+                     </table>
                 </div>
             </div>
         </div>

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use App\post;
@@ -126,23 +125,8 @@ class PostsController extends Controller
         if(auth()->user()->id !==$post->user_id){
             return redirect('posts')->with('error', 'Unauthorized page');
         }
-
+        
         $post->delete();
         return redirect('/posts')->with('success', 'Post Removed');
-    }
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function postStatus(Request $request)
-    {
-        $post = post::find($request->$post->id);
-        $post->online = $request->status;
-        $user->save();
-
-        return response()->json(['success'=>'Status change successfully.']);
     }
 }

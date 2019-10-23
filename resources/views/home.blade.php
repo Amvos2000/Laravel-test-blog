@@ -28,15 +28,6 @@
                                  <th>{{$post->title}}</th>
                                     <th><a href="/posts/{{$post->id}}/edit">Edit</a></th>
                                     <th><a href="/posts/{{$post->id}}/edit">Delete</a></th>
-                                 <th>
-
-                                     <div class="form-group">
-                                         {!! Form::open(['action' => ['PostsController@online', $post->id], 'method' => 'POST']) !!}
-                                         {{Form::hidden('Online', $post->online, ['class' => 'form-control', 'placeholder' => 'Online'])}}
-                                         {{Form::submit('Push online')}}
-                                         {!! Form::close() !!}
-                                     </div>
-                                 </th>
                              </tr>
                          @endforeach
 

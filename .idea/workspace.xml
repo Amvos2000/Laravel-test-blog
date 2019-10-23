@@ -112,7 +112,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/laravel-toggle-switch-button-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -161,7 +161,12 @@
       <workItem from="1570479052766" duration="699000" />
       <workItem from="1570813943949" duration="851000" />
       <workItem from="1570880436765" duration="7207000" />
-      <workItem from="1570969346111" duration="1717000" />
+      <workItem from="1570969346111" duration="2715000" />
+      <workItem from="1571054615052" duration="4168000" />
+      <workItem from="1571342610624" duration="696000" />
+      <workItem from="1571487458725" duration="3249000" />
+      <workItem from="1571666415551" duration="4518000" />
+      <workItem from="1571758520471" duration="7084000" />
     </task>
     <servers />
   </component>

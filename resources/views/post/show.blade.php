@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <a href="/posts" class="btn btn-default">Go back</a>
+    <div class="container">
     <h1>{{$post->title}}</h1>
     <div>
         {{$post->body}}
@@ -19,5 +19,6 @@
     {!!Form::close() !!}
         @endif
     @endif
+    </div>
 @endsection
 
